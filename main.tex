@@ -28,6 +28,25 @@
 
 \usetheme{confposter} % Use the confposter theme supplied with this template
 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{physics}
+\usepackage{graphicx, caption}
+\usepackage{tcolorbox}
+\usepackage{amsmath}
+\usepackage[mathscr]{euscript}
+\usepackage[absolute,overlay]{textpos}
+%\usepackage{algorithmicx}
+%\usepackage[Algorithm,ruled]{algorithm}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+\usepackage{calc}
+\usepackage{times}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+
+
 \setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
 \setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
@@ -95,7 +114,9 @@
 Can we have unconditional security with limited Quantum resource?
 \begin{itemize}
 \item Restrict one parties capability. 
-\item Still achieve comparable security. 
+\item Bridge the gap between Classical and Quantum Realm
+\item Use less expensive Quantum hardwares
+\item Fallback option for fully fledged QKD
 \end{itemize}
 
 \end{alertblock}
@@ -106,11 +127,22 @@ Can we have unconditional security with limited Quantum resource?
 
 \begin{block}{Introduction}
 
-Perfect security is impossible if all parties are classical. But it is possible if everyone has quantum capabilities. What if one of them doesn't? This is what we answer in this work. 
+\begin{itemize}
+\item Perfect security is impossible with all-classical capabilities. 
+\item Surprisingly, it is possible with quantum resources. 
+\item Develop high-dimensional semi-quantum protocol with better security. 
+\end{itemize}
+
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{qkd.png}
+	\caption{Quantum Key Distribution}
+\end{figure}
 
 \end{block}
 
 %------------------------------------------------
+
+Using qudits instead of qubits, modify The following figure shows a general depiction of high-dimensional semi-quantum QKD. 
 
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{sqkd_hidim}
@@ -136,23 +168,18 @@ Perfect security is impossible if all parties are classical. But it is possible 
 
 \begin{block}{Materials}
 
-The following materials were required to complete the research:
-
+HD-QKD offers:
 \begin{itemize}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\item Eu facilisis est tempus quis
+\item More information transmitted in each iteration. 
+\item Robust against quantum cloning.
+\item Better noise resistance. 
 \end{itemize}
 
-The materials were prepared according to the steps outlined below:
 
-\begin{enumerate}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\item Curabitur pellentesque dignissim
-\end{enumerate}
+\begin{figure}
+	\includegraphics[width=\linewidth]{proof_table.png}
+\end{figure}
+
 
 \end{block}
 
@@ -166,9 +193,13 @@ The materials were prepared according to the steps outlined below:
 %	METHODS
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Methods}
+\begin{block}{Reduction}
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{oneway.png}
+	\caption{Figure caption}
+\end{figure}
 
-We convert it to a one way protocol, compute it's density matrix. 
+
 \end{block}
 
 %----------------------------------------------------------------------------------------
@@ -182,9 +213,7 @@ We convert it to a one way protocol, compute it's density matrix.
 %----------------------------------------------------------------------------------------
 
 \begin{alertblock}{Important Result}
-
-Let(UF,UR)be a collective attack against HD-SQKD. Then,there is an attack against the OW-SQKD protocol such that,Eve gets no advantage in either scenario
-
+High-dimensional SQKD offers the best key-rate so far. Proof technique developed here is applicable to other protocols.
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
@@ -199,25 +228,16 @@ Let(UF,UR)be a collective attack against HD-SQKD. Then,there is an attack agains
 
 \begin{block}{Mathematical Section}
 
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-  
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
+\begin{figure}
+	\includegraphics[width=.6\linewidth]{hd_eqns.png}
+\end{figure}
 
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
 
-\begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname}
-\end{equation}
+\begin{figure}
+	\includegraphics[width=\linewidth]{hd_v_ow.png}
+	\caption{Figure caption}
+\end{figure}
 
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-
-\begin{equation}
-\kappa =\frac{\xi}{E_{\mathrm{max}}} %\mathbb{ZNR}
-\end{equation}
 
 \end{block}
 
@@ -231,28 +251,19 @@ Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sol
 %	RESULTS
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Results}
+\begin{block}{Evaluation}
+
+
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{ber_v_kr_to_label_done_small.png}
+	\caption{Figure caption}
+\end{figure}
+
 
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{q_v_kr_to_label_done_small.png}
 \caption{Figure caption}
 \end{figure}
-
-Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
-
-\begin{table}
-\vspace{2ex}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
 
 \end{block}
 
@@ -272,11 +283,17 @@ Treatment 3 & 0.0009271 & 0.296 \\
 %	CONCLUSION
 %----------------------------------------------------------------------------------------
 
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{keyrate-ind.png}
+	\caption{Figure caption}
+\end{figure}
+
 \begin{block}{Conclusion}
 
 \begin{itemize}
-	\item We show that perfect security is possible with limited resources. 
-	\item 
+	\item We have proposed a new HD-SQKD protocol.
+	\item Performed an information theoratic-security analysis. 
+	\item Showed how to reduce a two-way protocol to one way. 
 \end{itemize}
 
 \end{block}
@@ -312,13 +329,13 @@ Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius 
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
-
-\begin{block}{Acknowledgements}
-
-\small{\rmfamily{Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}} \\
-
-\end{block}
+%\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+%
+%\begin{block}{Acknowledgements}
+%
+%\small{\rmfamily{Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}} \\
+%
+%\end{block}
 
 %----------------------------------------------------------------------------------------
 %	CONTACT INFORMATION
@@ -330,18 +347,12 @@ Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius 
 \begin{alertblock}{Contact Information}
 
 \begin{itemize}
-\item Web: \href{http://www.university.edu/smithlab}{http://www.university.edu/smithlab}
-\item Email: \href{mailto:john@smith.com}{john@smith.com}
-\item Phone: +1 (000) 111 1111
+\item Email: \href{mailto:hasan.iqbal@uconn.edu}{hasan.iqbal@uconn.edu}
+\item Phone: +1 (312) 975 7006
 \end{itemize}
 
 \end{alertblock}
 
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.4\linewidth]{logo.png} & \hfill & \includegraphics[width=0.4\linewidth]{logo.png}
-\end{tabular}
-\end{center}
 
 %----------------------------------------------------------------------------------------
 
