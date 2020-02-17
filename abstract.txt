@@ -1,0 +1,7 @@
+A semi-quantum key distribution (SQKD) protocol allows two users, one of whom is
+restricted in their quantum capabilities, to establish a shared secret key, secure against
+an all-powerful adversary. In this paper, we design a new SQKD protocol using highdimensional quantum states and conduct an information theoretic security analysis.
+We show that, similar to the fully-quantum key distribution case, high-dimensional
+systems can increase the noise tolerance in the semi-quantum case. Along the way, we
+prove several general security results which are applicable to other SQKD protocols
+(both high-dimensional ones and standard qubit-based protocols).
