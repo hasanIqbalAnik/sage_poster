@@ -1,13 +1,19 @@
 \begin{thebibliography}{1}
 
-\bibitem{Smith:2012qr}
-J.~M. Smith and A.~B. Jones.
-\newblock {\em {B}ook {T}itle}.
-\newblock Publisher, 7th edition, 2012.
+\bibitem{boyer2007quantum}
+Michel Boyer, Dan Kenigsberg, and Tal Mor.
+\newblock Quantum key distribution with classical bob.
+\newblock In {\em 2007 First International Conference on Quantum, Nano, and
+  Micro Technologies (ICQNM'07)}, pages 10--10. IEEE, 2007.
 
-\bibitem{Smith:2013jd}
-A.~B. Jones and J.~M. Smith.
-\newblock {A}rticle {T}itle.
-\newblock {\em Journal title}, 13(52):123--456, March 2013.
+\bibitem{bennett2014quantum}
+Charles~H Bennett and Gilles Brassard.
+\newblock Quantum cryptography: public key distribution and coin tossing.
+\newblock {\em Theor. Comput. Sci.}, 560(12):7--11, 2014.
+
+\bibitem{iqbal2019high}
+Hasan Iqbal and Walter~O Krawec.
+\newblock High-dimensional semi-quantum cryptography.
+\newblock {\em arXiv preprint arXiv:1907.11340}, 2019.
 
 \end{thebibliography}

@@ -125,34 +125,36 @@ Can we have unconditional security with limited Quantum resource?
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Introduction}
+\begin{block}{Motivation}
 
 \begin{itemize}
-\item Perfect security is impossible with all-classical capabilities. 
-\item Surprisingly, it is possible with quantum resources. 
-\item Develop high-dimensional semi-quantum protocol with better security. 
+\item Perfect security is impossible with all-classical capabilities but possible with quantum resources. 
+\item High-dimensional QKD offers better protection.
+\item Using HD-resources in SQKD provides advantages. 
 \end{itemize}
-
-\begin{figure}
-	\includegraphics[width=0.8\linewidth]{qkd.png}
-	\caption{Quantum Key Distribution}
-\end{figure}
 
 \end{block}
 
-%------------------------------------------------
 
-Using qudits instead of qubits, modify The following figure shows a general depiction of high-dimensional semi-quantum QKD. 
-
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{sqkd_hidim}
-\caption{HD-SQKD}
-\label{fig:sqkd_hidim}
-\end{figure}
+\begin{block}{What is Quantum Key Distribution?}
+	
+	\begin{figure}
+		\includegraphics[width=\linewidth]{qkd.png}
+		\caption{Quantum Key Distribution}
+	\end{figure}
+\begin{itemize}
+\item Alice (A) sends her friend Bob (B) information via Qubits through Quantum channel.
+\item Adversary Eve (E) can attack the channel in various ways.
+\item A and B communicates classically to produce a shared key.
+\item The key is secure as long as E does not know 'too much' about it.
+\end{itemize}	
+	
+\end{block}
 
 %----------------------------------------------------------------------------------------
 
 \end{column} % End of the first column
+
 
 \begin{column}{\sepwid}\end{column} % Empty spacer column
 
@@ -166,18 +168,19 @@ Using qudits instead of qubits, modify The following figure shows a general depi
 %	MATERIALS
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Materials}
+\begin{block}{What is High-Dimensional SQKD}
 
-HD-QKD offers:
 \begin{itemize}
+\item High-Dimensional qudits instead of traditional qubits. 
 \item More information transmitted in each iteration. 
 \item Robust against quantum cloning.
 \item Better noise resistance. 
 \end{itemize}
 
-
 \begin{figure}
-	\includegraphics[width=\linewidth]{proof_table.png}
+	\includegraphics[width=\linewidth]{sqkd_hidim}
+	\caption{HD-SQKD}
+	\label{fig:sqkd_hidim}
 \end{figure}
 
 
@@ -226,16 +229,19 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 %	MATHEMATICAL SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Mathematical Section}
+\begin{block}{Simplified Protocol}
 
+%\begin{figure}
+%	\includegraphics[width=.6\linewidth]{hd_eqns.png}
+%\end{figure}
+
+\begin{itemize}
+\item We propose HD-SQKD to achieve the objectives. 
+\item To reduce analysis complexity of HD-SQKD, we show another equivalent protocol OW-SQKD. 
+\end{itemize}
+Following are the two protocols:\\
 \begin{figure}
-	\includegraphics[width=.6\linewidth]{hd_eqns.png}
-\end{figure}
-
-
-\begin{figure}
-	\includegraphics[width=\linewidth]{hd_v_ow.png}
-	\caption{Figure caption}
+	\includegraphics[width=1.09\linewidth]{hd_v_ow.png}
 \end{figure}
 
 
@@ -253,17 +259,17 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 
 \begin{block}{Evaluation}
 
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{keyrate-ind.png}
+	\caption{Noise Tolerance in different dimensions}
+	\end{figure}
 
 \begin{figure}
 	\includegraphics[width=0.8\linewidth]{ber_v_kr_to_label_done_small.png}
-	\caption{Figure caption}
+	\caption{Bit error rate vs Key rate: HD-SQKD vs HD-BB84}
 \end{figure}
 
 
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{q_v_kr_to_label_done_small.png}
-\caption{Figure caption}
-\end{figure}
 
 \end{block}
 
@@ -284,8 +290,8 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 %----------------------------------------------------------------------------------------
 
 \begin{figure}
-	\includegraphics[width=0.8\linewidth]{keyrate-ind.png}
-	\caption{Figure caption}
+	\includegraphics[width=0.8\linewidth]{q_v_kr_to_label_done_small.png}
+	\caption{Noise vs Key rate: HD-SQKD vs HD-BB84}
 \end{figure}
 
 \begin{block}{Conclusion}
@@ -294,6 +300,8 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 	\item We have proposed a new HD-SQKD protocol.
 	\item Performed an information theoratic-security analysis. 
 	\item Showed how to reduce a two-way protocol to one way. 
+	\item Proved that Qudits can indeed benefit SQKD model. 
+		\item Applying this proof technique to other protocols would be quite interesting. 
 \end{itemize}
 
 \end{block}
@@ -301,17 +309,17 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
-
-\begin{block}{Additional Information}
-
-Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
-\begin{itemize}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\end{itemize}
-
-\end{block}
+%
+%\begin{block}{Additional Information}
+%
+%Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
+%\begin{itemize}
+%\item Curabitur pellentesque dignissim
+%\item Eu facilisis est tempus quis
+%\item Duis porta consequat lorem
+%\end{itemize}
+%
+%\end{block}
 
 %----------------------------------------------------------------------------------------
 %	REFERENCES
@@ -341,8 +349,8 @@ Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius 
 %	CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
-\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+%\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+%\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
 \begin{alertblock}{Contact Information}
 
