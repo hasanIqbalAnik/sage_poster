@@ -235,14 +235,30 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 %	\includegraphics[width=.6\linewidth]{hd_eqns.png}
 %\end{figure}
 
-\begin{itemize}
-\item We propose HD-SQKD to achieve the objectives. 
-\item To reduce analysis complexity of HD-SQKD, we show another equivalent protocol OW-SQKD. 
-\end{itemize}
-Following are the two protocols:\\
-\begin{figure}
-	\includegraphics[width=1.09\linewidth]{hd_v_ow.png}
-\end{figure}
+%\begin{itemize}
+%\item We propose HD-SQKD to achieve the objectives. 
+%\item To reduce analysis complexity of HD-SQKD, we show another equivalent protocol OW-SQKD. 
+%\end{itemize}
+
+      \begin{tabular}{|p{14cm}|p{14cm}|}
+      	\hline
+      	\textbf{HD-SQKD} & \textbf{OW-SQKD}\\
+      	\hline
+      	\hline
+      	1. A prepares $\ket{z}$ or $\ket{x}$, sends to Bob  & 1. Bob prepares and sends two states depending on his choice of whether MR or Meas\\
+      	\hline
+      	2. Eve attacks the forward channel  & 2. Eve attacks only once\\
+      	\hline
+      	3. Bob measures/resends or reflects & 3. Alice measures in two basis \\
+      	\hline
+      	4. Eve attacks the reverse channel & \\
+      	\hline 5. Alice measures returning qubits. & \\
+      	\hline
+      \end{tabular}
+
+%\begin{figure}
+%	\includegraphics[width=1.09\linewidth]{hd_v_ow.png}
+%\end{figure}
 
 
 \end{block}
@@ -259,15 +275,19 @@ Following are the two protocols:\\
 
 \begin{block}{Evaluation}
 
+\begin{itemize}
+\item Noise tolerance: How much disturbance in the channel can the protocol withstand. 
+\item How does it compare to a famous fully quantum HD-QKD protocol.
+\end{itemize}
 \begin{figure}
-	\includegraphics[width=0.8\linewidth]{keyrate-ind.png}
+	\includegraphics[width=.9\linewidth]{keyrate-ind.png}
 	\caption{Noise Tolerance in different dimensions}
 	\end{figure}
 
-\begin{figure}
-	\includegraphics[width=0.8\linewidth]{ber_v_kr_to_label_done_small.png}
-	\caption{Bit error rate vs Key rate: HD-SQKD vs HD-BB84}
-\end{figure}
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{ber_v_kr_to_label_done_small.png}
+%	\caption{Bit error rate vs Key rate: HD-SQKD vs HD-BB84}
+%\end{figure}
 
 
 
@@ -290,7 +310,7 @@ Following are the two protocols:\\
 %----------------------------------------------------------------------------------------
 
 \begin{figure}
-	\includegraphics[width=0.8\linewidth]{q_v_kr_to_label_done_small.png}
+	\includegraphics[width=\linewidth]{q_v_kr_to_label_done_small.png}
 	\caption{Noise vs Key rate: HD-SQKD vs HD-BB84}
 \end{figure}
 
