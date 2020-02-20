@@ -44,7 +44,7 @@
 \usepackage{times}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
-
+\usepackage{colortbl}
 
 
 \setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
@@ -243,7 +243,7 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
       \begin{tabular}{|p{14cm}|p{14cm}|}
       	\hline
       	\textbf{HD-SQKD} & \textbf{OW-SQKD}\\
-      	\hline \hline
+      	\hline \arrayrulecolor{lightgray} \hline
       	1. A prepares $\ket{z}$ or $\ket{x}$, sends to Bob  & 1. Bob prepares and sends two states depending on his choice of whether MR or Meas\\ \hline
       	2. Eve attacks the forward channel  & 2. Eve attacks only once\\ \hline
       	3. Bob measures/resends or reflects & 3. Alice measures in two basis \\ \hline
@@ -368,6 +368,7 @@ High-dimensional SQKD offers the best key-rate so far. Proof technique developed
 %\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
 %\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
+\vspace{-.9in}
 \begin{alertblock}{Contact Information}
 
 \begin{itemize}
